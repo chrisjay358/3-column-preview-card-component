@@ -1,0 +1,84 @@
+.card {
+  padding: 3rem;
+
+  @media only screen and (max-width: 23.5em) {
+    padding-left: 3.5rem;
+    padding-right: 2.5rem;
+  }
+
+  &--1 {
+    background: $color-Bright-orange;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+
+    @media only screen and (max-width: 23.5em) {
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 7px;
+    }
+  }
+  &--2 {
+    background: $color-Dark-cyan;
+  }
+  &--3 {
+    background: $color-Very-dark-cyan;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+
+    @media only screen and (max-width: 23.5em) {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 7px;
+      border-bottom-left-radius: 7px;
+    }
+  }
+
+  .logo {
+    height: 3rem;
+  }
+
+  &__header {
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    margin: 2rem 0;
+  }
+
+  &__paragraph {
+    font-family: "Lexend Deca", sans-serif;
+    color: $color-Transparent-white;
+    margin-bottom: 6rem;
+    line-height: 2;
+    width: 83%;
+
+    @media only screen and (max-width: 23.5em) {
+      margin-bottom: 2rem;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.btn {
+  display: inline-block;
+  background: $color-light-gray;
+  padding: 1rem 2.5rem;
+  text-decoration: none;
+  border: 2px solid $color-light-gray;
+  border-radius: 3rem;
+  transition: all 0.2s ease;
+
+  &--1 {
+    color: $color-Bright-orange;
+  }
+
+  &--2 {
+    color: $color-Dark-cyan;
+  }
+
+  &--3 {
+    color: $color-Very-dark-cyan;
+  }
+
+  &:hover {
+    background: transparent;
+    color: $color-light-gray;
+  }
+}

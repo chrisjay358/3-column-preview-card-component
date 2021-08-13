@@ -1,0 +1,29 @@
+// Primary
+$color-Bright-orange: hsl(31, 77%, 52%);
+$color-Dark-cyan: hsl(184, 100%, 22%);
+$color-Very-dark-cyan: hsl(179, 100%, 13%);
+
+// Secondary
+$color-Transparent-white: hsla(0, 0%, 100%, 0.75);
+$color-light-gray: hsl(0, 0%, 95%);
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //1rem  10px, 10px/16px =62.5%
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  background: $color-light-gray;
+  color: $color-light-gray;
+}
